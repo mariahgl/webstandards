@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maria Souza | Personal Trainer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <h1>Maria Souza - Personal Trainer</h1>
+    <p>Treinos personalizados para transformar sua saúde!</p>
+    <a href="#contato" class="btn">Agende sua Avaliação</a>
+  </header>
+
+  <section class="sobre">
+    <img src="personal.jpg" alt="Foto da Personal">
+    <div>
+      <h2>Sobre Mim</h2>
+      <p>Sou formada em Educação Física e há mais de 6 anos ajudo pessoas a alcançarem seus objetivos com treinos focados em resultados.</p>
+    </div>
+  </section>
+
+  <section class="servicos">
+    <h2>Serviços</h2>
+    <div class="cards">
+      <div class="card"><h3>🏋️ Treino Funcional</h3><p>Fortaleça seu corpo e melhore seu desempenho.</p></div>
+      <div class="card"><h3>🔥 Emagrecimento</h3><p>Programas para perder peso com saúde.</p></div>
+      <div class="card"><h3>💻 Online</h3><p>Treine de casa com acompanhamento.</p></div>
+    </div>
+  </section>
+
+  <section class="beneficios">
+    <h2>Por que me escolher?</h2>
+    <div class="benefit-list">
+      <div class="benefit"><p>Horários Flexíveis</p></div>
+      <div class="benefit"><p>Planos Personalizados</p></div>
+      <div class="benefit"><p>Suporte Constante</p></div>
+    </div>
+  </section>
+
+  <section id="contato" class="contato">
+    <h2>Contato</h2>
+    <form>
+      <input type="text" placeholder="Nome" required>
+      <input type="email" placeholder="E-mail" required>
+      <textarea placeholder="Mensagem" required></textarea>
+      <button>Enviar</button>
+    </form>
+  </section>
+
+  <footer><p>© 2025 Maria Souza - Personal Trainer</p></footer>
+</body>
+</html>
+
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+body { color: #333; }
+
+/* Hero */
+.hero {
+  background: #ff7b00; color: #fff; text-align: center; padding: 80px 20px;
+}
+.btn {
+  display: inline-block; margin-top: 10px; background: #fff; color: #ff7b00;
+  padding: 10px 20px; border-radius: 5px; text-decoration: none;
+}
+
+/* Sobre */
+.sobre {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: center;
+  padding: 50px 10%; gap: 20px;
+}
+.sobre img { width: 200px; border-radius: 50%; }
+
+/* Serviços e Benefícios */
+.servicos, .beneficios { text-align: center; padding: 50px 10%; background: #f9f9f9; }
+.cards, .benefit-list {
+  display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin-top: 20px;
+}
+.card, .benefit {
+  background: #fff; padding: 15px; border-radius: 8px; flex: 1 1 250px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+/* Contato */
+.contato { background: #ff7b00; color: #fff; text-align: center; padding: 50px 10%; }
+form { display: flex; flex-direction: column; gap: 10px; max-width: 400px; margin: 0 auto; }
+input, textarea { padding: 10px; border: none; border-radius: 5px; }
+button { background: #fff; color: #ff7b00; border: none; padding: 10px; border-radius: 5px; }
+
+/* Rodapé */
+footer { background: #222; color: #fff; text-align: center; padding: 15px; font-size: 14px; }
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .sobre { flex-direction: column; text-align: center; }
+  .cards, .benefit-list { flex-direction: column; }
+}
